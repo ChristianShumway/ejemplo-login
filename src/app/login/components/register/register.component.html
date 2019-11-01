@@ -1,0 +1,29 @@
+<div class="example-container">
+  <form [formGroup] = "formRegister" class="form" (submit)="RegisterUser()">
+    <mat-form-field>
+      <input 
+        matInput 
+        placeholder="Nombre"
+        formControlName = "nombre"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input 
+        matInput 
+        placeholder="Usuario"
+        formControlName = "email"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input 
+        matInput 
+        placeholder="Contraseña"
+        formControlName = "password"
+      />
+    </mat-form-field>   
+    <div class="buttons">
+      <button mat-raised-button color="primary" type="sumbit">Registrar</button>
+      <button mat-raised-button (click) = "cancelar()">Cancelar</button>
+    </div>
+  </form>
+</div>

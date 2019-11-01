@@ -1,0 +1,22 @@
+<div class="example-container">
+  <form [formGroup] = "formSignIn" class="form" (submit)="loginUser()">
+    <mat-form-field>
+      <input 
+        matInput 
+        placeholder="Usuario"
+        formControlName = "email"
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <input 
+        matInput 
+        placeholder="Contraseña"
+        formControlName = "password"
+      />
+    </mat-form-field>   
+    <div class="buttons">
+      <button mat-raised-button color="primary" type="sumbit">Login</button>
+      <button mat-raised-button (click) = "irRegistrar()">Crear Usuario</button>
+    </div>
+  </form>
+</div>
